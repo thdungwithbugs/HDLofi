@@ -3,9 +3,8 @@ export const Songs = React.createContext();
 
 const Context = () => {
     return (
-        <div>
-            
-        </div>
+        <>          
+        </>
     );
 };
 

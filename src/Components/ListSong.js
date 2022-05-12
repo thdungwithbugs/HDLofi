@@ -16,9 +16,9 @@ const ListSong = () => {
   return (
     <div className="col-span-2 overflow-y-scroll">
       <table className="table-auto w-full ">
-        <thead className="text-topicColor h-12 sticky top-0 bg-stone-400">
+        <thead className="text-[#14213d] h-12 sticky top-0 bg-[#fca311]">
           <tr>
-            <th className="w-[10%]">#</th>
+            <th className="w-[10%]">Index</th>
             <th className="text-left">Title</th>
             <th className="w-[10%]">Author</th>
             <th className="w-[10%]">
@@ -31,7 +31,7 @@ const ListSong = () => {
             return (
               <tr
                 key={index}
-                className={`h-12 bg-[#0a9396] text-black hover:text-white hover:bg-[#005f73] transition-all cursor-pointer ${idSong === song.id && 'text-emerald-300 bg-teal-700'}`}
+                className={`h-12 bg-[#e5e5e5] text-black hover:text-white hover:bg-[#14213d] transition-all cursor-pointer ${idSong === song.id && 'text-[#ff8717] text-lg font-semibold bg-teal-700'}`}
                 onClick={()=>handlePlaySong(song.id)}
               >
                 <td className="text-center">{index + 1}</td>

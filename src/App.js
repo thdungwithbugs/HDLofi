@@ -1,5 +1,4 @@
 import { useState } from "react";
-// import "./App.css";
 import DetailSong from "./Components/DetailSong";
 import ListSong from "./Components/ListSong";
 import Navbar from "./Components/Navbar";
@@ -20,11 +19,11 @@ function App() {
     <div className="App">
       <Songs.Provider value={{DataSongs, dataSong, handleSetSong}} >
         <Navbar></Navbar>
-        <div className="grid grid-cols-3 bg-[#94d2bd] h-[calc(100vh-6rem*2)] overflow-hidden">
+        <div className="grid grid-cols-3 bg-white h-[calc(100vh-6rem*2)] overflow-hidden">
           <DetailSong />
           <ListSong />
         </div>
-        <div className="h-[6rem] bg-[#005f73]"><Playing/></div>
+        <div className="h-[6rem] bg-black"><Playing/></div>
       </Songs.Provider>
     </div>
   );
